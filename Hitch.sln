@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF Oefeningen", "C:\Users\mario\source\repos\WPF Oefeningen\WPF Oefeningen\WPF Oefeningen.csproj", "{2BDB10E7-D34C-4D33-9954-34356E782FFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hitch", "C:\Users\mario\source\repos\WPF Oefeningen\WPF Oefeningen\Hitch.csproj", "{2BDB10E7-D34C-4D33-9954-34356E782FFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
