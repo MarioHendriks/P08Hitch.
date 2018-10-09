@@ -1,0 +1,2 @@
+GrijsAchtergrond: #373131
+DonkerRood: #6B1E1E
