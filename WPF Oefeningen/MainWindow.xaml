@@ -1,0 +1,147 @@
+﻿<Window x:Class="WPF_Oefeningen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Oefeningen"
+        mc:Ignorable="d"
+        Title="Hitch" Height="1366" Width="786" ResizeMode="NoResize" >
+    <Grid Name="Hoofdsc">
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".05*"/>
+            <RowDefinition Height=".2*"/>
+            <RowDefinition Height=".4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="2" Source="Images\achtergrondv2.jpg" Stretch="Fill"/>
+        <Image Grid.Column="1" Grid.Row="1"  Source="Images\Hitch Logo.png"></Image>
+        <Image Name="Shop_car" Grid.Column="2" Grid.Row="0"  Source="Images\carrt 2 .png" HorizontalAlignment="Right" Width="50" Height="50" Margin="0,0,10,27" MouseDown="Shop_car_MouseDown_1" VerticalAlignment="Bottom"></Image>
+        <Image Grid.Column="0" Grid.Row="0"  Source="Images\icons8-menu-96.png" HorizontalAlignment="Left" Width="50" Height="50" Margin="10" MouseDown="Image_MouseDown"></Image>
+
+        <Grid Grid.ColumnSpan="3" Grid.Row="2" Background="#FF171313">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65*"/>
+                <RowDefinition Height="8"/>
+                <RowDefinition Height="189*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="8"/>
+                <RowDefinition Height="189*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="51*"/>
+            </Grid.RowDefinitions>
+            <Rectangle Grid.Row="1" Grid.Column="2" Fill="#6B1E1E" Grid.ColumnSpan="2" ></Rectangle>
+            <Label Name="cat_Placeholder1" Content="Placeholder" Grid.Column="2" Grid.Row="0" VerticalAlignment="Bottom" Foreground="White" FontSize="25"  Height="43" Grid.ColumnSpan="2" HorizontalAlignment="Center" Width="140" />
+            <Rectangle Grid.Row="5" Grid.Column="2" Fill="#6B1E1E" Grid.ColumnSpan="2"></Rectangle>
+            <Image Name="item_1" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2"  Source="Images\icons8-menu-96.png" MouseLeftButtonDown="Product_MouseDown"></Image>
+            <Label Name="plus_1" Grid.Column="0" Grid.Row="3" Content="+" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Label Name="min_1" Grid.Column="1" Grid.Row="3" Content="-" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Image Name="item_2" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2"  Source="Images\icons8-menu-96.png" MouseLeftButtonDown="Product_MouseDown"></Image>
+            <Label Name="plus_2" Grid.Column="2" Grid.Row="3" Content="+" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Label Name="min_2" Grid.Column="3" Grid.Row="3" Content="-" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Image Name="item_3" Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="2"  Source="Images\icons8-menu-96.png" MouseLeftButtonDown="Product_MouseDown"></Image>
+            <Label Name="plus_3" Grid.Column="4" Grid.Row="3" Content="+" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Label Name="min_3" Grid.Column="5" Grid.Row="3" Content="-" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Image Name="item_4" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="6"  Source="Images\icons8-menu-96.png" MouseLeftButtonDown="Product_MouseDown"></Image>
+            <Label Name="plus_4" Grid.Column="0" Grid.Row="7" Content="+" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Label Name="min_4" Grid.Column="1" Grid.Row="7" Content="-" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Image Name="item_5" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="6"  Source="Images\icons8-menu-96.png" MouseLeftButtonDown="Product_MouseDown"></Image>
+            <Label Name="plus_5" Grid.Column="2" Grid.Row="7" Content="+" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Label Name="min_5" Grid.Column="3" Grid.Row="7" Content="-" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Image  Name="item_6" Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="6"  Source="Images\icons8-menu-96.png" MouseLeftButtonDown="Product_MouseDown"></Image>
+            <Label Name="plus_6" Grid.Column="4" Grid.Row="7" Content="+" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+            <Label Name="min_6" Grid.Column="5" Grid.Row="7" Content="-" FontSize="20" Foreground="White" HorizontalAlignment="Center"></Label>
+        </Grid>
+        <Grid Name="ip_menu" Grid.RowSpan="3" Background="#FF171313" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="64"/>
+                <ColumnDefinition Width="233"/>
+                <ColumnDefinition Width="0"/>
+                <ColumnDefinition Width="61*"/>
+                <ColumnDefinition Width="138*"/>
+                <ColumnDefinition Width="75*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="253*"/>
+                <RowDefinition Height="36*"/>
+                <RowDefinition Height="693*"/>
+            </Grid.RowDefinitions>
+            <TextBox Name="ip" PreviewTextInput="NumberValidationTextBox" Grid.Row="1" Grid.Column="1" FontSize="20" SpellCheck.IsEnabled="True" />
+            <Button Name="inloggen" Content="Inloggen" Grid.Row="1" Grid.Column="4" Foreground="Black" Click="inloggen_Click" FontSize="20"></Button>
+            <Label Name="ip_adress" Content="Ip Adress" Foreground="White" Grid.Column="1" Grid.Row="0" HorizontalAlignment="left" VerticalAlignment="Bottom" FontSize="25"></Label>
+        </Grid>
+        <Grid Name="menu" Grid.RowSpan="3" Background="#FF171313" Margin="-305,0,305,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="53"/>
+                <ColumnDefinition Width="97"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="8"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="36"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Label Content="Populair" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" Foreground="White" FontSize="25" HorizontalAlignment="Left" Height="43" Width="100" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="1,0,0,0"/>
+            <Label Content="Drinken" Grid.Column="1" Grid.Row="4" VerticalAlignment="Bottom" Foreground="White" FontSize="25" HorizontalAlignment="Left" Height="43" Width="96" Grid.ColumnSpan="2" Margin="1,0,0,0"></Label>
+            <Label Content="Snacks" Grid.Column="1" Grid.Row="5" VerticalAlignment="Bottom" Foreground="White" FontSize="25" HorizontalAlignment="Left" Height="43" Width="85" Grid.ColumnSpan="2" Margin="1,0,0,0"></Label>
+            <Label Content="Snoep" Grid.Column="1" Grid.Row="6" VerticalAlignment="Bottom" Foreground="White" FontSize="25" HorizontalAlignment="Left" Height="43" Width="80" Grid.ColumnSpan="2" Margin="1,0,0,0"></Label>
+            <Image Grid.Column="0" Grid.Row="3"  Source="Images\hot 1 icon white.png" VerticalAlignment="Bottom" Height="35" Margin="8,0,6,0"/>
+            <Label Content="Categorie" Grid.ColumnSpan="3" Grid.Row="0" VerticalAlignment="Bottom" Foreground="#6B1E1E" FontSize="35" HorizontalAlignment="Center" FontWeight="Bold" FontStyle="Italic" Margin="18,0,14,0" Height="57" Width="168"></Label>
+            <Image Grid.Column="0" Grid.Row="4"  Source="Images\soft-drink.png" Height="35" VerticalAlignment="Bottom" Margin="8,0,6,0"/>
+            <Image Grid.Column="0" Grid.Row="5"  Source="Images\snacks icon white.png" Height="35" VerticalAlignment="Bottom" Margin="8,0,6,0"/>
+            <Image Grid.Column="0" Grid.Row="6"  Source="Images\candy icon white.png" Height="35" VerticalAlignment="Bottom" Margin="8,0,6,0"/>
+            <Rectangle Grid.ColumnSpan="5" Grid.Row="1" Fill="#6B1E1E" Margin="0,0,3,0"></Rectangle>
+            <Rectangle  x:Name="rect_Pop" Grid.ColumnSpan="5" Grid.Row="3" MouseLeftButtonDown="Rect_MouseDown" Fill="#00171313"/>
+            <Rectangle  x:Name="rect_Drinken" Grid.ColumnSpan="5" Grid.Row="4" MouseLeftButtonDown="Rect_MouseDown" Fill="#00171313" Margin="0,0,3,0"/>
+            <Rectangle  x:Name="rect_Snacks" Grid.ColumnSpan="5" Grid.Row="5" MouseLeftButtonDown="Rect_MouseDown" Fill="#00171313" Margin="0,0,3,0" />
+            <Rectangle  x:Name="rect_Snoep" Grid.ColumnSpan="5" Grid.Row="6" MouseLeftButtonDown="Rect_MouseDown" Fill="#00171313" Margin="0,0,3,0" />
+            <Image Name="btn_back" Grid.Row="0" Grid.Column="5" Source="Images\icons8-menu-96.png" HorizontalAlignment="Left" MouseLeftButtonDown="btn_back_MouseLeftButtonDown"></Image>
+        </Grid>
+
+        <Grid Name="Kassa" Grid.RowSpan="3" Background="#FF171313" Margin="327,0,-399,0" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="61"/>
+                <ColumnDefinition Width="42"/>
+                <ColumnDefinition Width="97"/>
+                <ColumnDefinition Width="29*"/>
+                <ColumnDefinition Width="15*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="8"/>
+                <RowDefinition Height="67"/>
+                <RowDefinition Height="44"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="798*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="126*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Winkelwagen" Grid.ColumnSpan="4" Grid.Row="0" VerticalAlignment="Bottom" Foreground="#6B1E1E" FontSize="35" HorizontalAlignment="Right" FontWeight="Bold" FontStyle="Italic" Height="57" Width="235" Margin="0,0,26,7" Grid.RowSpan="2" Grid.Column="1" />
+            <Image Name="Shop_car_back" Grid.Column="0" Grid.Row="0"  Source="Images\carrt 2 .png" HorizontalAlignment="Right" Width="50" Height="50"  VerticalAlignment="Bottom" Margin="0,0,0,9" MouseLeftButtonDown="Shop_car_back_MouseDown_1"></Image>
+            <Rectangle Grid.ColumnSpan="5" Grid.Row="1" Fill="#6B1E1E" Margin="0,1,0,2" />
+            <Label Name="inventory" Content="Inhoud" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Foreground="White" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="88"></Label>
+            <GroupBox Name="shoplist" Grid.Row="4" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="3" ></GroupBox>
+            <Button Name="btn_order" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="9" Background="#6B1E1E" Content="Order" FontSize="20" VerticalAlignment="Center" FontWeight="Bold" Height="40"/>
+        </Grid>
+    </Grid>
+</Window>
