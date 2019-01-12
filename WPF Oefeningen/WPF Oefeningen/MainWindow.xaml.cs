@@ -63,6 +63,7 @@ namespace WPF_Oefeningen
             string elementName = mouseWasDownOn.Name;
             if (elementName == "rect_Pop")
             {
+                //dit was echt slecht
                 cat_Placeholder1.Content = "Populair";
                 item_1.Source = new BitmapImage(new Uri("Images/cola logo.png", UriKind.Relative));
                 item_2.Source = new BitmapImage(new Uri("Images/fanta logo.png", UriKind.Relative));
